@@ -1,0 +1,322 @@
+@@charset "UTF-8";
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+  position: relative;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+  font-family: "Helvetica Neue", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+	line-height: 1.5;
+  color: #444;
+}
+body.create{
+	background-color: #ff808a;
+}
+p{
+  margin: 1em 0;
+}
+a{
+  text-decoration: inherit;
+  font:inhert;
+  color: #ff808a;
+}
+a:hover{
+  text-decoration: underline;
+}
+div.cover{
+  position: relative;
+  overflow: hidden;
+  background-color: #ff808a;
+  color: #fff;
+}
+div.cover img.ipad{
+	display: block;
+	position: absolute;
+	width: 400px;
+	padding: 0 0 0 400px;
+	margin: auto auto 0 auto;
+	top:0;
+	right:0;
+	bottom: -160px;
+	left: 0;
+}
+div.cover > div{
+  width: 600px;
+  margin: 200px auto;
+}
+div.cover div.content{
+  width: 360px;
+	position: relative;
+	z-index: 2;
+}
+div.cover h1{
+  font-size: 72px;
+  line-height: 1;
+  margin: 0 0 0.5em;
+}
+button.round{
+  display: block;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  border: 2px #fff solid;
+  color: #fff;
+  box-sizing: content-box;
+  height: 20px;
+  padding: 10px 20px;
+  border-radius: 22px;
+  margin: 50px 0 0 0;
+  cursor: pointer;
+	font-family: inherit;
+	font-size: 12px;
+}
+button.blue{
+	color: #ff808a;
+	border: 2px #ff808a solid;
+	margin: 0 auto;
+}
+button.black{
+	margin: 20px 20px 10px;
+	color: #444;
+	border: 1px #444 solid;
+	height: 16px;
+	padding: 4px 8px;
+	line-height: 16px;
+	border-radius: 12px;
+}
+button.round > *{
+  font-weight: bold;
+  margin: 0;
+}
+button.black > *{
+	font-weight: normal;
+}
+div.step{
+	position: relative;
+	background-color: #fff;
+	overflow: hidden;
+}
+div.step:nth-of-type(2n){
+	background-color: #fafafa;
+}
+div.step:before{
+	display: block;
+	content: "";
+	position: absolute;
+	border-top: 40px #fafafa solid;
+	border-left: 40px transparent solid;
+	border-right: 40px transparent solid;
+	left: -40px;
+	top: -1px;
+	margin-left: 50%;
+	z-index: 2;
+}
+div.step:nth-last-of-type(2n+1):before{
+	border-top: 40px #fff solid;
+}
+div.step:first-of-type:before{
+	display: none;
+}
+div.step > div{
+	width: 600px;
+	margin: 60px auto;
+}
+div.step h1{
+	text-align: center;
+	font-weight: 200;
+	font-size: 36px;
+	font-family: "Helvetica Neue", ".HiraKakuInterface-W1", sans-serif;
+}
+table{
+	table-layout: fixed;
+	border-collapse: collapse;
+	margin: 30px 0;
+}
+th, td{
+	background-color: #fff;
+	border: 1px #fafafa solid;
+	font-family: "Georgia", serif;
+	overflow: hidden;
+}
+td{
+	cursor: pointer;
+}
+td.hasInput{
+	font-family: inherit;
+	font-size: 12px;
+	line-height: 15px;
+}
+td, tr:first-of-type th{
+	width: 112px;
+	height: 56px;
+	vertical-align: middle;
+	text-align: center;
+	padding: 0;
+}
+tr th:first-child{
+	width: 33px;
+	height: 56px;
+}
+footer.global{
+  position: relative;
+  overflow: hidden;
+}
+footer.global > div{
+  width: 600px;
+  margin: 30px auto;
+  font-size: 12px;
+}
+body.create footer.global > div{
+	margin: 80px auto;
+	color: #fff;
+	text-align: center;
+}
+body.create footer.global a{
+	color: inherit;
+}
+body.create footer.global img{
+	display: block;
+	width: 240px;
+	margin: 80px auto;
+}
+/* input window */
+div#fullScreenWindow, div#fullScreenAbout{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0,0,0,0.1);
+	z-index: 10;
+	display: none;
+}
+div.window, div.about{
+	background-color: #fff;
+	width: 320px;
+	height: 480px;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left:0;
+	right:0;
+	bottom: 0;
+	margin: auto;
+	border-radius: 6px;
+}
+div.window h1, div.about h1{
+	margin: 10px 20px;
+	text-align: left;
+	font-weight: 100;
+	font-size: 48px;
+	line-height: 1;
+	font-family: "Helvetica Neue",".HiraKakuInterface-W1", sans-serif;
+}
+div.about h4{
+	font-size: inherit;
+	font-weight: bold;
+	margin: 1em 0 1em 0;
+}
+div.about div.content{
+	padding: 0 20px 0 20px;
+	overflow-y: scroll;
+	max-height: 376px;
+}
+form > div{
+	float:left;
+	width: 60px;
+	margin: 30px 0 0 50px;
+}
+form > div:first-of-type{
+	margin: 30px 0 0 20px;
+}
+form p{
+	font-size: 12px;
+}
+input[type="button"]{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	display: block;
+	background-color: #ff808a;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	line-height: 1;
+	text-align: center;
+}
+input[type="text"]{
+	font: inherit;
+	border: none;
+	border-bottom: 1px #fafafa solid;
+	outline:none;
+	display: block;
+	position: relative;
+	margin: 0;
+	padding: 10px 20px;
+	width: 100%;
+	box-sizing: border-box;
+}
+input[type="file"]{
+	display: block;
+	margin: 60px auto;
+}
+p.download{
+	display: none;
+	text-align: center;
+	margin:0;
+	line-height: 44px;
+}
+a.about{
+	cursor: pointer;
+}

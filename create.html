@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Schedule by Team Science Computer Project</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="jquery-2.1.4.min.js" charset="utf-8"></script>
+  <script src="jcanvas.min.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
+  <meta name="viewport" content="initial-scale=1">
+</head>
+<body class="create">
+<div id="fullScreenAbout">
+  <div class="about"><div>
+    <header>
+      <button class="round black"><p>&laquo; 戻る</p></button>
+      <h1>about</h1>
+    </header>
+    <div class="content">
+      <p>このWebサービスは、Team Science内コンピュータ担当プロジェクト「Team Science Computer Project」が開発したものです。Team Science Computer Projectでは、このほかにサーバ運用、プロジェクションマッピングなどの活動を行っています。</p>
+      <h4>バージョン情報</h4>
+      <p>Ver 2.0<br>大幅なパフォーマンスの向上<br>バグ修正<br>デザインの変更<br>
+        Ver 1.01<br>バグ修正<br>
+        Ver 1.0
+      </p>
+      <p>Created by Kazushi Konosu.</p>
+    </div>
+  </div></div>
+</div>
+<div id="fullScreenWindow">
+  <div class="window"><div>
+    <header>
+      <button class="round black"><p>&laquo; 戻る</p></button>
+      <h1>Day,<br/> Period num</h1>
+    </header>
+    <div class="content"><form>
+      <input type="text" name="class" placeholder="授業名">
+      <input type="text" name="teacher" placeholder="担当の先生">
+      <input type="text" name="room" placeholder="クラスルーム">
+      <div><input type="button" value="Go">
+      <p>このコマ</p></div>
+      <div><input type="button" value="subBlock">
+      <p>このコマを含むサブブロック</p></div>
+      <div><input type="button" value="block">
+      <p>このコマを含むブロック全体</p></div>
+    </form></div>
+  </div></div>
+</div>
+<div id="wrap">
+  <div class="step"><div>
+    <h1>How To</h1>
+    <p>自分だけの時間割を作成するには、以下の表に自分の時間割を入力します。授業の情報の入力は、同じブロック・サブブロックのすべてのコマに適用できます。</p>
+  </div></div>
+  <div class="step"><div>
+    <h1>入力する</h1>
+    <p>コマをタッチして授業を入力しよう。</p>
+    <table>
+      <tr><th></th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th></tr>
+      <tr><th>1</th><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><th>2</th><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><th>3</th><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><th>4</th><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><th>5</th><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><th>6</th><td></td><td></td><td></td><td></td><td></td></tr>
+      <tr><th>7</th><td></td><td></td><td></td><td></td><td></td></tr>
+    </table>
+  </div></div>
+  <div class="step"><div>
+    <h1>画像を選択</h1>
+    <input type="file" id="selectBackground">
+  </div></div>
+  <div class="step"><div>
+    <button class="round blue" id="makeTimeTable"><h3>時間割を作成</h3></button>
+    <p style="text-align:center;">作成された画像を長押しすると、iPadに保存できます。</p>
+    <p class="download">画像を生成しています。ダウンロードが完了するまでしばらくお待ちください。</p>
+  </div></div>
+  <footer class="global"><div>
+    <img src="schedule-logo-01.svg" alt="Schedule by Team Science Computer Project">
+    <p>Ver 2.0<br><a class="about">About</a> | <a href="http://twitter.com/sistscp">Follow us on Twitter</a><br>&copy; 2015 Team Science Computer Project</p>
+  </div></footer>
+</div>
+</body>
+</html>
